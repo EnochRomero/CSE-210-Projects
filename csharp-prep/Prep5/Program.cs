@@ -4,27 +4,30 @@ class Program
 {
     static void Main(string[] args)
     {
+
         static void DisplayWelcome ()
         {
             Console.WriteLine("Welcome to the program!");
         }
 
+
         static string PromptUserName ()
         {
-
             Console.Write("What is your name? ");
             string name = Console.ReadLine();
 
             return name;
         }
 
+
         static int PromptFavNumber()
         {
             Console.Write("What is your favorite number? ");
-            int FavNumber = int.Parse(Console.ReadLine());
+            int favNumber = int.Parse(Console.ReadLine());
 
-            return FavNumber;
+            return favNumber;
         }
+
 
         static int PromptBirthYear()
         {
@@ -42,11 +45,13 @@ class Program
             return numberSquared;
         }
 
+
         static void DisplayMassage(string name, int squaredNumber, int birthYear)
         {
             Console.WriteLine($"{name}, the sqaure of your number is {squaredNumber}");
             Console.WriteLine($"{name}, you will turn {2026-birthYear} this year.");
         }
+        
 
         static void main()
         {
