@@ -10,7 +10,7 @@ class Program
         job1._company = "Wendy's";
         job1._startYear = 2003;
         job1._endYear = 2019;
-
+        
         Job job2 = new Job();
         job2._jobTitle = "Super manager";
         job2._company = "Denny's";
