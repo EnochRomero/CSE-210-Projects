@@ -1,3 +1,12 @@
+// I exceeded expectations by addressing an additional journaling issue. 
+// One common issue of looking back on the past is that people 
+// (especially those dealing with some kind of depression) tend to think of their 
+// lives as more sad looking back when compared to how they actually felt in the moment, 
+// so I added a mood tracker into the program. This will help people more accurately see 
+// and remember the good days they have had.
+
+
+
 using System;
 using RandomPrompt;
 using Entry;
