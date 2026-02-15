@@ -1,6 +1,9 @@
 using System;
 
 
+// Exceeded expectations by adding a word counter displaying the words that you user has remaining
+
+
 class Program
 {
     static void Main(string[] args)
@@ -39,9 +42,6 @@ class Program
             wordsLeft -= 3;
 
             if (wordsLeft < 0) {wordsLeft = 0;}
-
-
-
 
         }
 
