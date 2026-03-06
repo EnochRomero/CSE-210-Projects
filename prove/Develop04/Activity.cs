@@ -56,10 +56,10 @@ class Activity
     {
         Console.WriteLine($"Well Done!");
 
-        DisplayLoadingAnimation(10);
+        DisplayLoadingAnimation(5);
 
         Console.WriteLine($"You have completed {_duration} seconds of the {_title}.");        
-        DisplayLoadingAnimation(5);
+        DisplayLoadingAnimation(3);
 
         Console.Clear();
 

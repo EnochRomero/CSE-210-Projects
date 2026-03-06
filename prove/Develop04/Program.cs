@@ -40,7 +40,7 @@ class Program
                 Console.Clear();
                 Reflecting reflecting = new Reflecting();
 
-                reflecting.SetDesc("In this activity you will be given questios to reflect on an experience you have had.");
+                reflecting.SetDesc("In this activity you will be given questions to reflect on an experience you have had.");
                 reflecting.SetTitle("Reflecting Activity");
 
                 reflecting.DisplayIntro();
