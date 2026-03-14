@@ -1,0 +1,5 @@
+30
+SimpleGoal|Eat fruit|Eat at least one fruit today|5|True
+EternalGoal|Run|Run at least one mile everyday|10
+ChecklistGoal|Temple|Go to the temple |10|False|50|1|1000
+ExponentialGoal|Water|drink a cup of water|10
