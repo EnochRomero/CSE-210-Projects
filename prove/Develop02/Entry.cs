@@ -1,28 +1,40 @@
-using System;
-using System.Collections.Generic;
-using RandomPrompt;
 
-namespace Entry
+using System.Text.Json;
+
+namespace Develop02
 {
     public class UserEntry
-
     {
-        public DateTime _currentDateTime = DateTime.Now;
-
-        public string _userTextEntry = "";
-
-        public string _userMood = "";
-
-        public string _givenPrompt = RandomPromptGenerator.GetRandomPrompt();
+        public DateTime CurrentDateTime { get; set; } = DateTime.Now;
+        public string UserTextEntry { get; set; } = "";
+        public string UserMood { get; set; } = "";
+        public string GivenPrompt { get; set; } = RandomPromptGenerator.GetRandomPrompt();
 
         public string MakeEntry()
         {
-            string entry = $"{_currentDateTime}\nRandom Prompt: {_givenPrompt}\n{_userTextEntry}\nToday's Mood: {_userMood}";
+            return $"{CurrentDateTime}\nRandom Prompt: {GivenPrompt}\n{UserTextEntry}\nToday's Mood: {UserMood}";
+        }
+    }
 
-            return entry;
+    public class Journal
+    {
+        public List<UserEntry> Entries { get; set; } = new List<UserEntry>();
+
+        public void AddEntry(UserEntry userEntry)
+        {
+            Entries.Add(userEntry);
         }
 
+        public void SaveEntries(string fileName)
+        {
+            string json = JsonSerializer.Serialize(Entries, new JsonSerializerOptions { WriteIndented = true });
+            File.WriteAllText(fileName, json);
+        }
 
-
-    } 
+        public void LoadEntries(string fileName)
+        {
+            string json = File.ReadAllText(fileName);
+            Entries = JsonSerializer.Deserialize<List<UserEntry>>(json);
+        }
+    }
 }
