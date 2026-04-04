@@ -20,6 +20,7 @@ class Program
         Console.WriteLine("3. Load");
         Console.WriteLine("4. Save");
         Console.WriteLine("5. Quit");
+        
     }
 
 
@@ -45,6 +46,9 @@ class Program
 
                 journal.AddEntry(newEntry);
             }
+
+
+
 
             // DISPLAY
             else if (choice == "2")
@@ -75,6 +79,8 @@ class Program
                 }
             }
 
+
+
             // SAVE
             else if (choice == "4")
             {
@@ -83,6 +89,9 @@ class Program
                 journal.SaveEntries(fileName);
                 Console.WriteLine("Entries saved successfully.");
             }
+
+
+
         }
     }
 

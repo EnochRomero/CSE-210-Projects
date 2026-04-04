@@ -27,6 +27,8 @@ namespace Develop02
             "If today had a theme, what would it be?"
         };
 
+
+
         public static string GetRandomPrompt()
         {
             int randomIndex = Random.Shared.Next(RandomPrompts.Count);

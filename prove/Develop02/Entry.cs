@@ -25,11 +25,15 @@ namespace Develop02
             Entries.Add(userEntry);
         }
 
+
+
         public void SaveEntries(string fileName)
         {
             string json = JsonSerializer.Serialize(Entries, new JsonSerializerOptions { WriteIndented = true });
             File.WriteAllText(fileName, json);
         }
+
+
 
         public void LoadEntries(string fileName)
         {

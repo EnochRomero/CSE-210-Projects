@@ -24,11 +24,11 @@ public class Program
 
         order1.DisplayPackingLabel();
         order1.DisplayShippingLabel();
-        Console.WriteLine($"${order1.ReturnTotalPrice()}");
+        Console.WriteLine($"${order1.ReturnTotalPrice():F2}");
 
         order2.DisplayPackingLabel();
         order2.DisplayShippingLabel();
-        Console.WriteLine($"${order2.ReturnTotalPrice()}");
+        Console.WriteLine($"${order2.ReturnTotalPrice():F2}");
 
 
     }
